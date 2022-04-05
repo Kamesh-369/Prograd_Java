@@ -1,0 +1,13 @@
+
+@mixin dimensions ($colorss,$top,$bottom,$left) {
+    border-top: $top solid transparent;
+    border-bottom:$bottom solid transparent ;
+    border-left:$left solid $colorss ;    
+}
+$colorss: blue;
+#triangle {   
+    @include dimensions ($colorss,$top:250px,$bottom:250px,$left:300px);
+}
+
+
+
